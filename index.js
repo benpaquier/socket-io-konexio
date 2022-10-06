@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5000 || process.env.port
+const port = process.env.port || 5000
 const cors = require('cors')
 const morgan = require('morgan')
 const http = require('http')
