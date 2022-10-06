@@ -14,8 +14,6 @@ const io = socketIO(server, {
   }
 })
 
-c
-
 app.use(cors('*'))
 app.use(morgan('tiny'))
 
