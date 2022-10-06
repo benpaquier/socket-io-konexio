@@ -14,6 +14,8 @@ const io = socketIO(server, {
   }
 })
 
+c
+
 app.use(cors('*'))
 app.use(morgan('tiny'))
 
@@ -28,6 +30,10 @@ io.on('connection', socket => {
   socket.on('disconnect', () => {
     console.log('Someone disconnect')
   })
+})
+
+server.get('/', (req, res) => {
+  res.send('okokokokk')
 })
 
 server.listen(port, () => {
